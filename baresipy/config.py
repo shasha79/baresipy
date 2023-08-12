@@ -21,9 +21,9 @@ call_max_calls		4
 audio_player		alsa,default
 audio_source		alsa,default
 audio_alert		alsa,default
-#ausrc_srate		48000
+ausrc_srate		48000
 #auplay_srate		48000
-#ausrc_channels		0
+ausrc_channels		2
 #auplay_channels	0
 #audio_txmode		poll		# poll, thread
 audio_level		no
