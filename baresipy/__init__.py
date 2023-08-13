@@ -221,8 +221,8 @@ class BareSIP(Thread):
         sound += AudioSegment.silent(duration=500)
         # ensure minimum time
         # workaround baresip bug
-        while sound.duration_seconds < 3:
-            sound += AudioSegment.silent(duration=500)
+        #while sound.duration_seconds < 3:
+        #    sound += AudioSegment.silent(duration=500)
 
         outfile = outfile or join(tempfile.gettempdir(), "pybaresip.wav")
         sound = sound.set_frame_rate(48000)
